@@ -7,8 +7,8 @@ export function createTable() {
   const tdHeaderImdb = document.createElement('th');
   tdHeaderId.classList.add('id');
   tdHeaderTitle.classList.add('title');
-  tdHeaderYear.classList.add('year');
   tdHeaderImdb.classList.add('imdb');
+  tdHeaderYear.classList.add('year');
   tdHeaderId.innerHTML = 'id';
   tdHeaderTitle.textContent = 'title';
   tdHeaderImdb.textContent = 'imdb';
@@ -60,14 +60,14 @@ export function sortData(data, objItem, param, reverse) {
   if (typeof(objItem[param]) === 'number' && reverse == true) {
     result = data.sort((a, b) => a[param] - b[param]).reverse();
     return result;
-  } else if (typeof(objItem[param]) === 'number' && reverse == false) {
+  }else if (typeof(objItem[param]) === 'number' && reverse == false) {
     result = data.sort((a, b) => a[param] - b[param]);
     return result;
   }
   if (typeof(objItem[param]) === 'string' && reverse == true) {
     result = data.sort((a, b) => a[param].toLowerCase() > b[param].toLowerCase() ? 1 : -1).reverse();
     return result;
-  } else if(typeof(objItem[param]) === 'string' && reverse == false) {
+  }else if (typeof(objItem[param]) === 'string' && reverse == false) {
     result = data.sort((a, b) => a[param].toLowerCase() > b[param].toLowerCase() ? 1 : -1);
     return result;
   }

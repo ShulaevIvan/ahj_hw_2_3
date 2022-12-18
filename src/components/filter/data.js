@@ -30,4 +30,14 @@ const data = [
       "year": 1994
     }
 ]
-export default data;
+const newData = []
+data.forEach((item) => {
+  newData.push({
+    'id': item.id,
+    'title': item.title,
+    'year': item.year,
+    'imdb': item.imdb
+  });
+});
+
+export default newData;

@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
       }
       if (reverse) reverse = false;
       else if (!reverse)reverse = true;
-    }, 1000);
+    }, 2000);
 
     document.body.appendChild(table);
 });
