@@ -1,0 +1,14 @@
+.main_table td, .main_table tr, .main_table th {
+    border: 1px solid gray;
+    padding:  10px;
+}
+.table_header th {
+    min-width: 150px;
+}
+
+.active_up::after {
+    content: ' \2191';
+}
+.active_down::after {
+    content: ' \2193';
+}
